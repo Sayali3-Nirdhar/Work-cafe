@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, GitHub, Linkedin, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -40,12 +40,12 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex items-center gap-4 border-l border-white/20 pl-6 w-[120px]">
-             <a href="https://github.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
-               <Github className="w-5 h-5" />
-             </a>
-             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
-               <Linkedin className="w-5 h-5" />
-             </a>
+            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
+              <Github className="w-5 h-5" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </a>
           </div>
         </nav>
 
@@ -76,9 +76,9 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="flex items-center gap-4 pt-4 border-t border-white/10 mt-2">
-                 <a href="https://github.com" className="text-slate-400 hover:text-white"><Github className="w-6 h-6" /></a>
-                 <a href="https://linkedin.com" className="text-slate-400 hover:text-white"><Linkedin className="w-6 h-6" /></a>
-                 <a href="mailto:contact@email.com" className="text-slate-400 hover:text-white"><Mail className="w-6 h-6" /></a>
+                <a href="https://github.com" className="text-slate-400 hover:text-white"><Github className="w-6 h-6" /></a>
+                <a href="https://linkedin.com" className="text-slate-400 hover:text-white"><Linkedin className="w-6 h-6" /></a>
+                <a href="mailto:contact@email.com" className="text-slate-400 hover:text-white"><Mail className="w-6 h-6" /></a>
               </div>
             </div>
           </motion.div>
