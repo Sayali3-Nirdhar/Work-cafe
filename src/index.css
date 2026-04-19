@@ -1,16 +1,17 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer components {
   .glass-nav {
-    @apply bg-black/50 backdrop-blur-md border-b border-white/10;
+    @apply bg-white/70 dark:bg-black/50 backdrop-blur-md border-b border-black/10 dark:border-white/10;
   }
   
   .glass-card {
-    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl;
+    @apply bg-white/80 dark:bg-white/5 backdrop-blur-lg border border-black/10 dark:border-white/10 rounded-2xl shadow-sm dark:shadow-none;
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 dark:from-purple-400 dark:via-pink-500 dark:to-indigo-500;
   }
   
   .btn-primary {
@@ -18,12 +19,12 @@
   }
   
   .btn-secondary {
-    @apply px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors;
+    @apply px-6 py-3 rounded-full border border-black/20 dark:border-white/20 text-slate-800 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors;
   }
 }
 
 body {
-  @apply bg-slate-950 text-slate-100 overflow-x-hidden;
+  @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 overflow-x-hidden transition-colors duration-300;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -31,20 +32,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar styled for dark/light generically */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #020617; /* slate-950 */
+  @apply bg-slate-100 dark:bg-slate-950;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155; /* slate-700 */
-  border-radius: 4px;
+  @apply bg-slate-300 dark:bg-slate-700 rounded-md;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569; /* slate-600 */
+  @apply bg-slate-400 dark:bg-slate-600;
 }

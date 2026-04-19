@@ -16,7 +16,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-start gap-6"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-purple-300">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-sm font-medium text-purple-600 dark:text-purple-300">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
@@ -29,7 +29,7 @@ const HeroSection = () => {
             <span className="text-gradient">John Doe</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-slate-400 max-w-lg leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
             A passionate Frontend Developer specializing in building exceptional, high-quality digital experiences using modern web technologies.
           </p>
           
@@ -53,8 +53,8 @@ const HeroSection = () => {
         >
           {/* Mockup or placeholder image container */}
           <div className="relative w-full aspect-square max-w-md mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 rounded-3xl transform rotate-6 border border-white/10 glass-card"></div>
-            <div className="absolute inset-0 bg-slate-900 rounded-3xl transform -rotate-3 border border-white/10 flex items-center justify-center overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 rounded-3xl transform rotate-6 border border-black/10 dark:border-white/10 glass-card"></div>
+            <div className="absolute inset-0 bg-slate-100 dark:bg-slate-900 rounded-3xl transform -rotate-3 border border-black/10 dark:border-white/10 flex items-center justify-center overflow-hidden shadow-xl dark:shadow-none">
                 <img 
                   src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=600&auto=format&fit=crop" 
                   alt="Developer"
