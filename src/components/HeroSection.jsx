@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, Cpu, Code2, Globe } from 'lucide-react';
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px] -z-10" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[100px] -z-10" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-maroon/40 rounded-full blur-[100px] -z-10" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-mustard/20 rounded-full blur-[100px] -z-10" />
       
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <motion.div 
@@ -16,24 +16,32 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-start gap-6"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-sm font-medium text-purple-600 dark:text-purple-300">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+          <div className="flex flex-wrap gap-3 mb-2">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-xs font-medium text-gold">
+              <Code2 className="w-3.5 h-3.5" /> Frontend Specialist
             </span>
-            Available for new opportunities
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-mustard/10 border border-mustard/20 text-xs font-medium text-mustard">
+              <Globe className="w-3.5 h-3.5" /> System Thinker
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cream/10 border border-cream/30 text-xs font-medium text-cream">
+              <Cpu className="w-3.5 h-3.5" /> IoT + Web Developer
+            </span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
             Hi, I'm <br />
-            <span className="text-gradient">John Doe</span>
+            <span className="text-gradient">Sayali Nirdhar</span>
           </h1>
+
+          <h2 className="text-xl md:text-2xl font-semibold text-cream">
+            Full Stack Developer | Electronics & Telecommunication Engineer
+          </h2>
           
-          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
-            A passionate Frontend Developer specializing in building exceptional, high-quality digital experiences using modern web technologies.
+          <p className="text-lg text-cream/80 max-w-lg leading-relaxed mt-2">
+            Frontend-focused developer skilled in React.js and modern JavaScript, with a strong foundation in electronics and system-level thinking. I build responsive, scalable, and end-to-end solutions.
           </p>
           
-          <div className="flex flex-wrap items-center gap-4 mt-4">
+          <div className="flex flex-wrap items-center gap-4 mt-6">
             <a href="#projects" className="btn-primary flex items-center gap-2 group">
               View My Work
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -51,13 +59,12 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative hidden md:block"
         >
-          {/* Mockup or placeholder image container */}
           <div className="relative w-full aspect-square max-w-md mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 rounded-3xl transform rotate-6 border border-black/10 dark:border-white/10 glass-card"></div>
-            <div className="absolute inset-0 bg-slate-100 dark:bg-slate-900 rounded-3xl transform -rotate-3 border border-black/10 dark:border-white/10 flex items-center justify-center overflow-hidden shadow-xl dark:shadow-none">
+            <div className="absolute inset-0 bg-gradient-to-tr from-maroon/50 to-mustard/20 rounded-3xl transform rotate-6 border border-gold/10 glass-card transition-transform hover:rotate-12 duration-500 shadow-[0_0_30px_rgba(184,138,44,0.15)]"></div>
+            <div className="absolute inset-0 bg-maroon/40 rounded-3xl transform -rotate-3 border border-gold/20 flex items-center justify-center overflow-hidden shadow-xl transition-transform hover:rotate-0 duration-500 z-10 backdrop-blur-sm">
                 <img 
-                  src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=600&auto=format&fit=crop" 
-                  alt="Developer"
+                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop" 
+                  alt="Developer Desk"
                   className="object-cover w-full h-full opacity-80"
                 />
             </div>

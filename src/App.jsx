@@ -18,15 +18,17 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen font-sans selection:bg-purple-500/30">
+    <div className="min-h-screen font-sans selection:bg-gold/30">
       <Navbar />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <ContactSection />
-      </main>
-      <Footer />
+      <div className="md:pl-28 pb-24 md:pb-0">
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ProjectsSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
